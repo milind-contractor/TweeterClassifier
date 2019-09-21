@@ -14,7 +14,7 @@ except:
 # Import Libraries 
 # 1. Pandas: Used for structured data operations and manipulations. 
 # 2. Numpy:Stands for numerical python. It works on n-dimensional array.
-# 3. nltk:
+# 3. nltk: nlp library for Lemmatization and Steming 
 # 4. sklearn:
 # 
 
@@ -36,8 +36,8 @@ np.random.seed(500)
 
 
 #%%
-Corpus = pd.read_csv(r"moneyLaundering.csv",encoding='latin-1')
-
+Corpus = pd.read_csv(r"Bloomberg@Markets Tweets_v0.2.csv",encoding='latin-1')
+Corpus
 #%%
 # Step - a : Remove blank rows if any.
 Corpus['text'].dropna(inplace=True)
