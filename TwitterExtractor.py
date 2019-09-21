@@ -59,7 +59,7 @@ def getTweetFromTwitter(hashTag,classification):
 
 
 #%%
-getTweetFromTwitter("#profit","profit")
+getTweetFromTwitter("#profit -filter:@markets","profit")
 
 
 #%%
